@@ -17,11 +17,7 @@
     "package:sign-exe": "signcode './out/Electron API Demos-win32-ia32/Electron API Demos.exe' --cert ~/electron-api-demos.p12 --prompt --name 'Electron API Demos' --url 'http://electron.atom.io'",
     "package:installer": "node ./script/installer.js",
     "package:sign-installer": "signcode './out/windows-installer/ElectronAPIDemosSetup.exe' --cert ~/electron-api-demos.p12 --prompt --name 'Electron API Demos' --url 'http://electron.atom.io'",
-    "xpackage:mas": "./script/mas.sh",
-    "windows-store": "node ./script/windows-store.js",
-    "release": "node ./script/release.js",
-    "prepack": "check-for-leaks",
-    "prepush": "check-for-leaks"
+    "xpackage:mas": "./script/mas.sh"
   },
   "repository": "https://github.com/electron/electron-api-demos",
   "keywords": [
